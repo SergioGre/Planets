@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Toshiba';
+    src: url(./assets/fonts/PxPlus_ToshibaSat_8x16.ttf);
+}
+
+:root{
+
+   font-family: 'Toshiba' ;
+   font-size: 28px;
+}
+p{
+  font-weight: 400;
+}
+h1{
+    color: #9FECD2;
+    text-shadow: 0px 0px 5px #5C80CA, 0px 0px 10px #519433;
+    letter-spacing: 0.3rem;
+    animation: 2s neon alternate-reverse infinite;
+}
+h2{
+    color: #81B0B7;
+    text-shadow: 0px 0px -1px #5C9CCA, 0px 0px 3px #609433;
+    letter-spacing: 0,2rem;
+    font-size: 1.1rem;
+}
+.neon-light{
+    animation: 0.01s neon alternate-reverse infinite;
+}
+
+
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-menu{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 30px;
+  margin: 30px;
+  max-width: 1000px;
+}
+
+/* Select */
+  li{
+    list-style-type: none;
+  }
+
+  .custom-select{
+  margin: auto; 
+  width: 300px; 
+  }
+
+  .custom-select:hover{
+  cursor: pointer;
+  }
+
+  .select-active-value{
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 5px 20px;
+  height: 40px;
+  border: solid 1px #D0B78D;
+  border-bottom: solid 1px  #453D34;
+  border-right: none;
+  background-color:rgba(48, 46, 41, 0);
+  color: aliceblue;
+    background-image: url(./assets/image/select.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+    .select-active-value.is-activ{
+      background-image: url(./assets/image/serect_activ.svg);
+    }
+    .select-active-value p{
+      background-image: linear-gradient(#FFFFFF 40%, #999999 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  .option-list{
+  background-color: #1b1b1b;
+  border: solid 1px #FCB30380;
+  box-shadow: 0 0 10px #FCB30380;
+  color: aliceblue;
+  position: absolute;
+  width: 280px; 
+  padding: 10px;
+  margin-top: 10px;
+  display: none;
+  }
+
+  .option{
+
+  }
+    .option-list.show{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    .option:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+    }
+    .option.disable{
+      color: #5c5c5c;
+      pointer-events: none;
+    }
+
+    .option.is-target{
+      background-image: url(./assets/image/chevron-active.svg);
+      background-position: 0%;
+      background-repeat: no-repeat;
+      padding-left: 0.5em;
+    }
+    
+
+  .select__input-hidden{
+  display: none;
+  pointer-events: none;
+  }
+
+/* --------- Select end ---------*/
+#overlay{
+  position: fixed;
+  background-image: url(./assets/image/overlay.png);
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 2;
+  
+}
+
+.content{
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1900px;
+}
+
+
+
+li{
+    color: #9FECD2;
+}
+.flex-box{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1000px;
+   
+}
+header{
+    width: 1200px;
+    height: 150px;
+    top: 0;
+    align-self: center;
+    justify-self: center;
+    background-image: url(./assets/image/header_bg.png);
+    background-size: 50%;
+    background-position: 60% 0%;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+
+}
+#logo{
+    
+    width: 100vw;
+    max-width: 500px;
+    display: flex;
+    align-self: center;
+    justify-self: center;  
+}
+#versus-icon{
+  font-size: 50px;
+  align-self: center;
+  
+  background-image: linear-gradient(#D0B78D, #2b2621);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+#line-distance{
+  min-width: 100%;
+  width: 1000px;
+  min-height: 3px;
+  background-color: #cfa853;
+  
+}
+.lil-planet{
+  width: 100px;
+  left: 140px;
+    position: absolute;
+    
+}
+
+
+.litle-erth-string{
+  background-image: url(./assets/image/planet/Earth.png);
+  background-size: 30px;
+}
+
+.title-container{
+    grid-column: span 3;
+    align-content: center;
+    justify-items: center;
+}
+.flex-container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: end;
+  align-items: flex-end; 
+}
+
+
+.simile-icon{
+  width: 64px;
+}
+
+
+.planet-info{
+  display: flex;
+  flex-direction: column;  
+}
+  .size-box{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .planet-info p{
+    background-image: linear-gradient(#FFFFFF 40%, #999999 60%);
+  
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow( 0px 0px 5px #947533);
+
+      margin: 30px;
+      
+    font-size: 64px;
+  }
+  .distance-container{
+    width: 150%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    height: 200px;
+  }
+
+#solar_img{
+  position: absolute;
+  display: flex;
+  align-self: start;
+  transform: translateY(-2300px) translateX(-2095px);
+  pointer-events: none;
+
+}
+
+
+
+
+.stars, .twinkling {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  
+}
+
+.stars {
+  background:#000 url(https://i.postimg.cc/hhFD7Nkf/apps-47636-13819498107583324-fb06b53a-4974-4acb-85e6-f6f363f85ab6-edec48d0-ec35-4a1f-8bf5-c455987b4a.png) repeat top center;
+  z-index: -2;
+ 
+}
+
+.twinkling {
+  position: absolute;
+  background-image: url(https://i.postimg.cc/CLpNr4PF/twinkling.png);
+  animation: 3s twinkle infinite;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hiden-el{
+  display: none;
+}
+.emoji {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  display: none;
+}
+
+  
+
+
+
+@keyframes twinkle {
+  from {backrgound-position: 0}
+  to {background-position: -100px 0}
+}
+@keyframes neon {
+    from {
+        text-shadow:
+        0 0 10px #5C80CA,
+        0 0 20px #519433;
+    }
+    to {
+        text-shadow: 0 0 20px #5C80CA,
+        0 0 25px #5C80CA,
+        0 0 45px #519433;
+       
+    }
+}

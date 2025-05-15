@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body >
+<div class="stars">
+<div class="twinkling">
+</div>
+</div>
+<div class="content">
+    
+<header>
+    <img id="logo" class="overlay" src="./assets/image/logo.png" alt="КОСМОС">
+</header>
+
+    <div id="overlay"></div>
+    <div class="input-menu">
+        <div class="custom-select" id="select_1">
+            <div class="select-active-value"><p>Выбери плвнету</p></div>
+            <ul class="option-list">
+                <li class="option" data-value="Mercury">Меркурий</li>
+                <li class="option" data-value="Venus">Венера</li>
+                <li class="option" data-value="Earth">Земля</li>
+                <li class="option" data-value="Mars">Марс</li>
+                <li class="option" data-value="Jupiter">Юпитер</li>
+                <li class="option" data-value="Saturn">Сатурн</li>
+                <li class="option" data-value="Uranus">Уран</li>
+                <li class="option" data-value="Neptune">Нептун</li>
+            </ul>
+            <input  type="text" 
+                    id="select-left" 
+                    value="" 
+                    class="select__input-hidden">
+        </div>
+        
+        <p id="versus-icon">VS</p>
+
+        <div class="custom-select" id="select_2">
+            <div class="select-active-value"><p>Выбери планету</p></div>
+            <ul class="option-list">
+                <li class="option" data-value="Mercury">Меркурий</li>
+                <li class="option" data-value="Venus">Венера</li>
+                <li class="option" data-value="Earth">Земля</li>
+                <li class="option" data-value="Mars">Марс</li>
+                <li class="option" data-value="Jupiter">Юпитер</li>
+                <li class="option" data-value="Saturn">Сатурн</li>
+                <li class="option" data-value="Uranus">Уран</li>
+                <li class="option" data-value="Neptune">Нептун</li>
+            </ul>
+            <input  type="text" 
+                    id="select-right" 
+                    value="" 
+                    class="select__input-hidden">
+        </div>
+    </div>
+
+        <div class="flex-box hiden-el">
+
+            <div >
+                <div class="title-container">
+                    <h1>ДИАМЕТР, КМ</h1>   
+                   <h2>расстояние между противоположными тточками экватора</h2>
+               </div>
+               <div class="flex-container">
+                    <div class="planet-info">
+                        <div class="size-box">
+                            <img  id="left-img" src="" alt="">
+                        </div>
+                        <p id="left-dmtr"></p>
+                    </div>
+
+                    <img class="simile-icon" id="comparison_diameter" src="" alt="">
+                    
+                    <div class="planet-info">
+                        <div class="size-box">
+                            <img  id="right-img" src="" alt="">
+                        </div>
+                        <p id="right-dmtr"></p>
+                    </div>
+               </div>
+            </div>
+
+            <div>
+                <div class="title-container">
+                    <h1> ТЕМПЕРАТУРА °С</h1>   
+                   <h2>на поверхности или в верхних слоях атмосферы</h2>
+               </div>
+               <div class="flex-container">
+                    <div class="planet-info">
+                        <div class="flex-container">
+                            <img src="" id="left-emoji_2" class="emoji" alt="">
+                            <img src="" id="left-emoji_1" class="emoji" alt="">
+                            <p id="left-tmprt"></p>
+                        </div>
+                    </div>
+
+                    <img class="simile-icon" id="comparison_temperature" src="" alt="">
+                    
+                    <div class="planet-info">
+                        <div class="flex-container">
+                            <p id="right-tmprt"></p>
+                            <img src="" id="right-emoji_1" class="emoji" alt=" ">
+                            <img src="" id="right-emoji_2" class="emoji" alt=" ">
+                        </div>
+                        
+                    </div>
+               </div>
+            </div>
+
+            <div>
+                <div class="title-container">
+                    <h1>МАССА</h1>   
+                   <h2>относительная масса планеты в массах земли</h2>
+               </div>
+               <div class="flex-container">
+                    <div class="planet-info">
+                        <div>
+                            <div id="left-mass-icon_remainder" class="litle-erth-string"></div>
+                            <div id="left-mass-icon" class="litle-erth-string"></div>
+                            <p id="left-mass"></p>
+                        </div>
+                    </div>
+
+                    <img class="simile-icon" id="comparison_mass" src="" alt="">
+                    
+                    <div class="planet-info">
+                        <div id="right-mass-icon_remainder" class="litle-erth-string"></div>
+                        <div id="right-mass-icon" class="litle-erth-string"></div>
+                        <div>
+                            <p id="right-mass"></p>
+                        </div>
+                        
+                    </div>
+               </div>
+            </div>
+
+            <div>
+                <div class="title-container">
+                    <h1> ОРБИТА, МЛН КМ</h1>   
+                   <h2>среднее расстояние от центра планеты до солнца</h2>
+               </div>
+               <div class="flex-container">
+                    <div class="planet-info">
+                        <div class="flex-container">
+                            <p id="left-distance"></p>
+                        </div>
+                    </div>
+
+                    <img class="simile-icon" id="comparison_distance" src="" alt="">
+                    
+                    <div class="planet-info">
+                        <div class="flex-container">
+                            <p id="right-distance"></p>   
+                        </div>    
+                    </div>
+
+               </div>
+               <div class="flex-container distance-container">
+                <img src="./assets/image/sun.png" id="solar_img">
+                            
+                     <div id="line-distance"></div>
+                <img src="./assets/image/planet/Earth.png" class="lil-planet" id="planet_1">
+                <img src="./assets/image/planet/Mars.png" class="lil-planet" id="planet_2">
+                </div>
+               
+            </div>
+            
+
+        </div>
+
+        
+    
+</div>
+
+</body>
+<script src="./scripts.js"></script>
+</html>
