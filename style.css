@@ -125,12 +125,15 @@ body{
 /* --------- Select end ---------*/
 #overlay{
   position: fixed;
+  display: block;
   background-image: url(./assets/image/overlay.png);
   width: 100%;
   height: 100%;
   opacity: 0.08;
   pointer-events: none;
+  background-size: cover;
   z-index: 2;
+  margin: 0;
   
 }
 
@@ -190,15 +193,24 @@ header{
 #line-distance{
   min-width: 100%;
   width: 1000px;
+  
   min-height: 3px;
   background-color: #cfa853;
   
 }
 .lil-planet{
   width: 100px;
-  left: 140px;
-    position: absolute;
-    
+  /*left: 140px;*/
+ 
+ 
+  position: relative;
+}
+.planet-container{
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+  margin-left: 20px;
 }
 
 
@@ -254,6 +266,7 @@ header{
     justify-content: center;
     justify-self: center;
     height: 200px;
+    max-width: 1800px;
   }
 
 #solar_img{

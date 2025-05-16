@@ -242,10 +242,12 @@ function showInfo () {
       document.getElementById('planet_1').src = leftPlanet.imageURL;
       document.getElementById('planet_2').src = rightPlanet.imageURL;
       document.getElementById('planet_1').style.width = `${leftPlanet.size}px`;
+      document.getElementById('planet_1').style.height = `${leftPlanet.size}px`;
       document.getElementById('planet_2').style.width = `${rightPlanet.size}px`;
+       document.getElementById('planet_2').style.height = `${rightPlanet.size}px`;
       document.getElementById('planet_1').style.marginLeft = `${pxDistLeft}px`;
       document.getElementById('planet_2').style.marginLeft = `${pxDistRight}px`;
-
+      
 
   /*-----------------------------------------------------*/
 
@@ -345,6 +347,7 @@ function showInfo () {
       lilPlace.style.height = '30px';
       }
     }
+    
   }
 };
 
